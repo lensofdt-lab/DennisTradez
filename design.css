@@ -8,7 +8,7 @@
 body{
     background: url(IMG_20240813_172009.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100%;
     background-attachment: scroll;
     background-color: rgba(0, 0, 0, 0.089);
     margin: 0;
