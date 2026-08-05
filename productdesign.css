@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url(./images/20250927_091914.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#chk1{
+    display: none;
+}
+
+i{
+    color: #fff;
+    cursor: pointer;
+}
+
+header .logo{
+    flex: 1;
+    color: #fff;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+}
+
+header ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid cadetblue;
+}
+
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+
+@media(max-width:640px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top: 100px;
+        background: rgba(0, 0, 0, 0.63);
+        height: calc(100vh - 100px);
+        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5secs linear;
+    }
+
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+}
+
+@media(max-width:600px){
+    header .logo{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+
+    header ul{
+        width: 100%;
+    }
+}
+
+.container{
+    width: 90%;
+    height: 90vh;
+    padding: 15px;
+    padding-top: 8px;
+    margin-left: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    margin: 0 30px;
+    box-shadow: 0 0 9px 4px rgba(255, 248, 248, 0.973);
+    transition: 0.3s;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.intro{
+    margin-top: 130px;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    z-index: 3;
+    cursor: pointer;
+    border-right: 0cqmax;
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 6;
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.card .intro{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .intro{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .intro h1{
+    margin: 0;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 3px solid #000000;
+    margin-right: 50px;
+    color: #341088;
+}
+
+.card .intro p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.card .intro .btn{
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    background: #00bcd4;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.clr{
+    clear: both;
+}
+
+.container .head{
+    padding: 10px 0;
+}
+
+.container .head h3{
+    color: #fff;
+    padding: 1px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #fff;
+}
+
+.container .head p{
+    color: #fff;
+    font-size: small;
+    margin-top: 3px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.footer li{
+    list-style-type: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: x-small;
+    box-sizing: border-box;
+    margin-left: 115px;
+    color: #fff;
+    margin-top: 10px;
+}
