@@ -9,7 +9,7 @@ body{
     background: url(IMG_20240813_172009.jpg);
     overflow-x: hidden;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.089);
 }
