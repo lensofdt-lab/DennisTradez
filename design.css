@@ -191,6 +191,11 @@ header .menu{
         position: absolute;
     }
 
+    body{
+        background-attachment: scroll;
+        background-position: center top;
+    }
+
     header ul{
         position: fixed;
         top: 100px;
@@ -223,10 +228,6 @@ header .menu{
     header .logo{
         font-size: 15px;
         margin-left: 30px;
-    }
-
-    body{
-        background-attachment: scroll;
     }
 
     header ul{
