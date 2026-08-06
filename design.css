@@ -210,7 +210,7 @@ header .menu{
     }
 
     #chk1:checked ~ ul{
-        right: 0;
+        left: 0;
     }
 
     .footer{
