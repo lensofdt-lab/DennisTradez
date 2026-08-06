@@ -85,6 +85,8 @@ header .search-box{
 
 header ul{
     flex: 2;
+    bottom: 0;
+    left: 0;
     display: flex;
     justify-content: space-evenly;
 }
