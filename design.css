@@ -6,7 +6,8 @@
 }
 
 body{
-    background: url(IMG_20240813_172009.jpg);
+    background: url(IMG_20240813_172009.jpg) no repeat center center fixed;
+    overflow-x: hidden;
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -192,6 +193,8 @@ header .menu{
     header ul{
         position: fixed;
         top: 100px;
+        left: -60%;
+        bottom: 0;
         background: rgba(0, 0, 0, 0.63);
         height: calc(100vh - 100px);
         width: 50%;
