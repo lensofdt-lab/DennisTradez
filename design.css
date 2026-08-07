@@ -5,14 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    background: url(IMG_20240813_172009.jpg);
+body {
+    background-image: url(IMG_20240813_172009.jpg);
     background-repeat: no-repeat;
-    overflow-x: hidden;
     background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;   /* important for mobile Chrome */
     min-height: 100vh;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.089);
+    background-color: #0a0a0a;       /* dark fallback so it never shows white */
+    overflow-x: hidden;
 }
 
 header{
@@ -192,10 +193,12 @@ header .menu{
         position: absolute;
     }
 
-    body{
+    body {
         background-attachment: scroll;
         background-position: center top;
-        background-repeat: no repeat;  
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
     }
 
     header ul{
