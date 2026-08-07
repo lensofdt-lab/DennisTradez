@@ -196,9 +196,9 @@ header .menu{
     body {
         background-attachment: scroll;
         background-position: top center;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        min-height: 100vh;
+        min-height: 60vh;
     }
 
     header ul{
