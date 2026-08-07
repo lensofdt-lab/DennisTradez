@@ -195,6 +195,7 @@ header .menu{
     body{
         background-attachment: scroll;
         background-position: center top;
+        background-repeat: no repeat;  
     }
 
     header ul{
