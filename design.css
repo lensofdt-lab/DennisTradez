@@ -233,6 +233,7 @@ header .menu{
     }
 
     .content{
+        padding-top: 8rem;
         display: block;
         width: 100%;
         font-size: small;
