@@ -233,6 +233,7 @@ header .menu{
     }
 
     .content{
+        text-align: center;
         padding-top: 8rem;
         display: block;
         width: 100%;
@@ -240,11 +241,23 @@ header .menu{
         margin: auto;
     }
 
-    .content .title,
+    .content .title{
+        font-size: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: none;
+    }
+    
     .content .topic,
     .content .buttons
     {
         margin-left: 3.5rem;
+        font
+    }
+
+    .content.par{
+        margin-right: 0;
+        padding: 0 1.5rem;
     }
 
     .footer{
