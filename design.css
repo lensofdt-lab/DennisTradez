@@ -1,11 +1,11 @@
-0*{
+hi{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+bo {
     background-image: url(IMG_20240813_172009.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,10 +195,10 @@ header .menu{
 
     body {
         background-attachment: scroll;
-        background-position: top center;
+        background-position: center 20%;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 60vh;
+        min-height: 60vh;
     }
 
     header ul{
@@ -225,7 +225,7 @@ header .menu{
     }
 
     .footer{
-        position: relative;
+        position: fixed;
     }
 }
 
