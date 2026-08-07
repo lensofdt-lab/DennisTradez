@@ -188,15 +188,15 @@ header .menu{
     box-sizing: border-box;
 }
 
-@media(max-width:1000px){
+@media(max-width:600px){
     .search-box button{
         position: absolute;
     }
 
     body {
         background-attachment: scroll;
-        background-position: center top;
-        background-size: cover;
+        background-position: top center;
+        background-size: contain;
         background-repeat: no-repeat;
         min-height: 100vh;
     }
