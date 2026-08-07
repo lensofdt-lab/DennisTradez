@@ -183,7 +183,7 @@ header .menu{
     box-sizing: border-box;
 }
 
-@media(max-width:1000px){
+@media(max-width:600px){
     .search-box button{
         position: absolute;
     }
