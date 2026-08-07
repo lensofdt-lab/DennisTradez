@@ -191,6 +191,8 @@ header .menu{
     header ul{
         position: fixed;
         top: 100px;
+        left: -60%;
+        bottom: 0;
         background: rgba(0, 0, 0, 0.63);
         height: calc(100vh - 100px);
         width: 50%;
