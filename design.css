@@ -180,14 +180,6 @@ header .menu{
     clear: both;
 }
 
-.footer {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-}
-
 .footer li{
     color: #fff;
     list-style-type: none;
@@ -235,7 +227,6 @@ header .menu{
 
     .footer{
         position: relative;
-        margin-top: 80px;
     }
 }
 
@@ -272,6 +263,5 @@ header .menu{
 
     .footer{
         position: relative;
-        margin-top: 60px;
     }
 }
