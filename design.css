@@ -6,6 +6,7 @@
 }
 
 body {
+    display: flex;
     background-image: url(IMG_20240813_172009.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,6 +124,7 @@ header .menu{
     color: rgb(247, 247, 247);
     position: relative;
     box-sizing: border-box;
+    flex: 1;
 }
 
 .content .par{
@@ -178,13 +180,20 @@ header .menu{
     clear: both;
 }
 
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
 .footer li{
-    margin-top: 150px;
-    margin-left: 5rem;
     color: #fff;
     list-style-type: none;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: x-small;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -225,7 +234,8 @@ header .menu{
     }
 
     .footer{
-        position: fixed;
+        position: relative;
+        margin-top: 80px;
     }
 }
 
@@ -262,5 +272,6 @@ header .menu{
 
     .footer{
         position: relative;
+        margin-top: 60px;
     }
 }
