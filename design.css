@@ -6,7 +6,6 @@
 }
 
 body {
-    display: flex;
     background-image: url(IMG_20240813_172009.jpg);
     background-repeat: no-repeat;
     background-size: cover;
