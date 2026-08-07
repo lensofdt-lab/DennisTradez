@@ -1,4 +1,4 @@
-*{
+0*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -198,7 +198,7 @@ header .menu{
         background-position: top center;
         background-size: cover;
         background-repeat: no-repeat;
-        min-height: 60vh;
+        height: 60vh;
     }
 
     header ul{
