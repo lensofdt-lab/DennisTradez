@@ -7,7 +7,7 @@
 
 body{
     background: url(IMG_20240813_172009.jpg);
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     overflow-x: hidden;
     background-size: cover;
     min-height: 100vh;
