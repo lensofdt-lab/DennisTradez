@@ -234,11 +234,15 @@ header .menu{
 
     .content{
         text-align: center;
-        padding-top: 8rem;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translateX(-50%);
         display: block;
-        width: 100%;
+        width: 90%;
         font-size: small;
         margin: auto;
+        padding-top: 0;
     }
 
     .content .title{
